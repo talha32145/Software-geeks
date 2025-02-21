@@ -1,0 +1,282 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f3f4f6;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+.logo{
+    font-style: italic;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+}
+
+.navbar a:hover{
+    text-decoration: underline white;
+    transform: scaleY(1.3) translateY(-5px);
+    box-shadow: #ccc;
+}
+.navbar .nav-links {
+    display: flex;
+}
+.navbar .auth-buttons {
+    display: flex;
+}
+.navbar .auth-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.navbar .auth-buttons button:hover {
+    background-color: #45a049;
+}
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #333;
+    z-index: 9;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+.form-container input[type=text], .form-container input[type=password] {
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #575757;
+}
+.form-container .cancel {
+    background-color: red;
+}
+
+/* courses  */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .section-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+    color: #666;
+  }
+
+  .course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
+  .course-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+     background: #fff;
+   
+  }
+
+  .course-card a{
+    margin: 2px;
+  }
+  .course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .course-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .course-card .card-content {
+    padding: 20px;
+  }
+
+  .course-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+
+  .course-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+
+  .course-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-right: 10px;
+  }
+
+  .course-card a:hover {
+    background: #0056b3;
+  }
+
+  .about{
+    display: flex;
+    justify-content: space-around;
+     height: 30rem;
+     width: 100%;
+     align-items: center;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     overflow: hidden;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: #fff;
+      margin-bottom: 2rem;
+  }
+
+  .about:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .content{
+    margin-top: 2rem;
+  }
+
+  .mission{
+    margin-left: 2rem;
+  }
+
+  .mission p{
+    font-size: 1.3rem;
+  }
+  .vision{
+    margin-left: 2rem;
+  }
+  .vision p{
+    font-size: 1.3rem;
+  }
+  .picture img{
+    height: 420px;
+    width: 420px;
+    border-radius: 50%;
+    
+  }
+  .picture img:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  /* contact form  */
+
+  .contact-form-container {
+    height: 30rem;
+    background:white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.contact-form-container:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+    width: 48%;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color:white;
+    color: black;
+}
+
+.contact-form button {
+    display: block;
+    padding: .3rem;
+    border-radius: 1rem;
+    background: transparent;
+    color:black;
+    font-size: 1rem;
+    margin: .4rem 0.2rem;
+    cursor: pointer;
+}
+.contact-form button:hover{
+    color: white;
+    background-color: black;
+}
+
+label {
+    color: black;
+}
